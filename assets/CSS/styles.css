@@ -1,8 +1,20 @@
+#first{
+    display: flex;
+}
 #car{ 
-    width: 40%;
-    margin: auto;
+    width: 40%;    
     border: solid 3px gray;
     border-radius: 4px;
+    position: relative;
+    left: 60%;
+    display: block;
+    margin-top: 8px;
+}
+#me{
+    position: absolute;
+    width: 58%;
+    margin-left: 15px;
+    margin-top: 8px
 }
 #telemail{
     background-color: unset !important;
@@ -27,12 +39,29 @@ h1{
     display: block;
     position: relative;
     top: 5px;
-    padding-bottom: 4px;
-    padding-top: 10px;
+    padding: 7px 30px;
     line-height: 35px;
-    font-family: serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    min-width: fit-content;
 }
 #titlepost{
     font-size: 1rem;
-    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 750px){ 
+    h1{
+        font-size: 5vw;
+        padding: 5px 20px;        
+      
+    }
+    #titlepost{
+        font-size:4vw;
+    }
+    #car{
+        width: 100%;
+        position: unset;
+    left: unset;
+    display: block;
+    }
 }
