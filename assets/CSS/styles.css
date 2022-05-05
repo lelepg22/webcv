@@ -16,7 +16,7 @@
     margin-left: 15px;
     margin-top: 8px
 }
-#telemail{
+.buttonUnset{
     background-color: unset !important;
     border: unset !important;
     color: #0d6efd;
@@ -24,9 +24,84 @@
     padding: 0 !important;
     margin-left: 5px !important;
 }
+.exit{
+    
+    position: fixed;
+    right: 12.9%;
+    margin-top: -9px;
+
+}
+.exitArrow{
+    background: #2d567c;
+    padding: 15px;
+    margin-right: 7px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #e8bb8f;
+    border-radius: 19px;
+    border: solid;
+   
+}
+.exitArrow:hover{
+    animation: color 1s forwards;
+    border: solid 5px; 
+    font-weight: bolder;
+    
+}
+.titreCv{
+    text-align: center;
+    line-height: 40px;
+    margin-top: 14px;  
+    font-family:system-ui, 'Courier New', Courier, monospace;
+}
+.projets{
+    width: 30%;
+    text-align: end;
+    font-weight: bolder;
+}
+.projetTitle{
+    width: 67%;
+}
+.liens a:hover , .liens a:focus{
+    color:#0d6efd !important;
+    text-decoration: underline;
+}
+#accordProjets{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.projetCreations{
+    line-height: 40px;
+    font-family: system-ui, 'Courier New', Courier, monospace;
+    border-bottom: solid 3px #cd5d57;
+    width: fit-content;
+    margin: auto;
+    margin-top: 12px;
+    padding: 8px 33px;
+    border-radius: 7px;
+    color:#313c55;
+}
+.cvGrand{
+    border: solid 3px #80a3be;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 25px !important;
+    padding-right: 20px;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
 header{
     background-image:url("../IMG/back.webp");
-    height: 110px;;
+    height: 125px;
+    background-repeat: round;
+}
+a , a:visited{
+    color:unset ;
+    text-decoration: unset;
 }
 h1{
     background-color: black;
@@ -47,6 +122,12 @@ h1{
 #titlepost{
     font-size: 1rem;
     font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+@keyframes color{
+    100%{
+        color:#d56255;
+        transform: rotate(360deg) scale(1.2);
+    }
 }
 
 @media screen and (max-width: 750px){ 

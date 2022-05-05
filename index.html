@@ -2,12 +2,37 @@
 <html lang="fr">
  <head>
     <meta charset="utf-8" />
-    <meta name="google-site-verification" content="lcr1N_PEzXRoW31JGg8Jg457mQkzirvBfDjG7jL1pfg" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="google-site-verification" content="lcr1N_PEzXRoW31JGg8Jg457mQkzirvBfDjG7jL1pfg" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/CSS/styles.css" />
     <link rel="shortcut icon" type="image/webp" href="favicon.webp">
+    <script src="https://kit.fontawesome.com/d8b5bf98b4.js" crossorigin="anonymous"></script>
    
     <title>CV Web Alexandre Gaglianone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('wkscT8P3J0lEY1Mjd');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_x75m3dw', 'template_nisg74j', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
   <header>
@@ -17,7 +42,7 @@
   
   <div class="alert alert-primary alert-dismissible fade show" role="alert">
         <strong> Bienvenue !   </strong> Je vous attendais. <em>Vous cherchiez mon CV ?</em> <a target="_blank" href="https://drive.google.com/file/d/1o6NtYKSEDzvm61GJPQmW75_T9fWLXe50/view?usp=sharing">Cliquez ici.</a>
-<em>Mon numéro de téléphone/email ?</em> <button type="button" class="btn btn-secondary" id="telemail" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="tel: +33768364537  alex.gaglianone@gmail.com">
+<em>Mon numéro de téléphone/email ?</em> <button type="button" class="btn btn-secondary buttonUnset"  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="tel: +33768364537  alex.gaglianone@gmail.com">
   Cliquez ici.
 </button>
 
@@ -32,10 +57,10 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mon Dossier</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">CV</a></li>
-        <li><a class="dropdown-item" href="#">Projets et créations</a></li>        
+        <li><a class="dropdown-item" href="assets/cv.html">CV</a></li>
+        <li><a class="dropdown-item" href="assets/projets.html">Projets et créations</a></li>        
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Mon GitHub</a></li>
+        <li><a class="dropdown-item" target="_blank" href="https://github.com/lelepg22">Mon GitHub <i class="fa-brands fa-github"></i></a></li>
       </ul>
     </li>
     <li class="nav-item">
@@ -114,7 +139,7 @@ Déterminé, organisé et sérieux, je cherche une opportunité, tant pour trava
 
 
           </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">05/05/2022  - Alexandre Gaglianone à Toulouse</small></p>
         </div>
       </div>
     </div>
@@ -123,6 +148,16 @@ Déterminé, organisé et sérieux, je cherche une opportunité, tant pour trava
 </div>
 </div>
 </div>
+<form id="contact-form">
+  <input type="hidden" name="contact_number">
+  <label>Name</label>
+  <input type="text" name="user_name">
+  <label>Email</label>
+  <input type="email" name="user_email">
+  <label>Message</label>
+  <textarea name="message"></textarea>
+  <input type="submit" value="Send">
+</form>
 
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
