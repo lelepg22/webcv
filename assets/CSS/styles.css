@@ -16,6 +16,82 @@
     margin-left: 15px;
     margin-top: 8px
 }
+#contact{
+    padding-bottom: 45px;
+    padding-top: 10px;
+    background-color: #80808017;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #cd5d577a;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+textarea{
+    width: 56%;
+    height: 6vw;
+    margin-bottom: 23px;
+   
+}
+.inputForm{
+    width: 30%;
+}
+
+
+/* CSS */
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.1rem;
+    padding: .75rem 2rem;
+  }
+}
+.formLabel{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
 .buttonUnset{
     background-color: unset !important;
     border: unset !important;
@@ -48,6 +124,12 @@
     font-weight: bolder;
     
 }
+.titreContact{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
 .titreCv{
     text-align: center;
     line-height: 40px;
