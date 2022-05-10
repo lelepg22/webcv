@@ -1,18 +1,19 @@
 #first{
     display: flex;
+    flex-direction: row-reverse;
 }
 #car{ 
     width: 40%;    
-    border: solid 3px gray;
-    border-radius: 4px;
-    position: relative;
-    left: 60%;
+      
     display: block;
     margin-top: 8px;
 }
+.carousel-item { 
+    border: solid 3px gray;
+    border-radius: 4px;  
+}
 #me{
-    position: absolute;
-    width: 58%;
+   
     margin-left: 15px;
     margin-top: 8px
 }
@@ -20,6 +21,11 @@
     padding-bottom: 45px;
     padding-top: 10px;
     background-color: #80808017;
+}
+#page{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -5px;
 }
 #contact-form{
     display: flex;
@@ -34,6 +40,67 @@
     -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+.toggle-box {
+    display: none;
+  }
+  
+  .toggle-box + label {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 5px;    
+  }
+  
+  .toggle-box + label + div {
+    display: none;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-box:checked + label + div {
+    display: block;
+  }
+  
+  .toggle-box + label:before {
+   
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #524d4d;    
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    width: 20px;
+    content: "voir plus..";
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 100%;
+    
+  }
+  .expand{
+    text-align: center;
+    margin: auto;
+    background-color: #e7dada87;
+    height: 25px !important;
+    border: solid 1px #c1b9b9;
+    border-radius: 7px;
+    width: 70%;
+    color: #524d4d;
+    padding-bottom: 4px;
+  }
+  
+ .toggle-box:checked + label:before {
+    content: "voir moins..";
+    color: #524d4d;  
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 100%;
+    
+  } 
 textarea{
     width: 56%;
     height: 6vw;
@@ -46,6 +113,7 @@ textarea{
 
 
 /* CSS */
+
 .button-73 {
   appearance: none;
   background-color: #FFFFFF;
@@ -83,6 +151,7 @@ textarea{
 }
 
 @media (min-width: 768px) {
+
   .button-73 {
     font-size: 1.1rem;
     padding: .75rem 2rem;
@@ -129,6 +198,7 @@ textarea{
     margin-top: 10px;
 
 }
+
 
 .titreCv{
     text-align: center;
@@ -212,7 +282,45 @@ h1{
     }
 }
 
+@media screen and (max-width: 856px){    
+
+    #me {
+       font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 768px){ 
+    
+
+    .photo {
+       width: 32%;
+       display: none;
+    }
+}
+
 @media screen and (max-width: 750px){ 
+    .formLabel{
+        font-size: 0.9rem;
+    }
+    .button-73{
+        font-size: 1rem;
+    }
+    textarea{
+        width: 80%;
+        height: 13vw;
+        
+    }
+    .inputForm{
+        width: 80%;
+    }
+    #me{
+        font-size: 1rem;
+    }
+    #first{
+        flex-direction: column-reverse;
+    }
+    .photo{
+        display: unset;
+    }
     h1{
         font-size: 5vw;
         padding: 5px 20px;        
@@ -227,4 +335,5 @@ h1{
     left: unset;
     display: block;
     }
+
 }
