@@ -257,6 +257,18 @@ textarea{
     margin-right: 0 !important;
     min-width: 70%;
 }
+address{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+
+}
+address > a {
+    margin: 10px;
+}
+/* */
+
+/* */
 header{
     background-image:url("../IMG/back.webp");
     height: 125px;
@@ -620,6 +632,9 @@ h1{
 	}
 }
 @media screen and (max-width: 1026px) { 
+    address > a {
+        text-align: center;
+    }
    
     .expandComp{
         display: block;
