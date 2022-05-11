@@ -18,10 +18,15 @@
   </header>
 
   <main>
-    <div class="exit"><a href="../index.html"><button type="button" class="btn btn-secondary buttonUnset" data-bs-trigger="hover focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Accueil"><i class="fa-solid fa-arrow-right-from-bracket exitArrow"></i></button></a>
-       
-      </div>
+    
       <h2 class="titreCv">Curriculum Vitae</h2>
+      
+      <div id="maincard">
+        <div class="exit"><a href="../index.html"><button type="button" class="btn btn-secondary buttonUnset" data-bs-trigger="hover focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Accueil"><i class="fa-solid fa-arrow-right-from-bracket exitArrow"></i></button></a>
+       
+        </div>
+        
+              
       <div id="competances">
         <div class="competance comp1"   role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 80"><span id="count1" class="counts"></span></div>
         <div class="competance comp2"   role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 85"><span id="count2" class="counts"></span></div>
@@ -34,8 +39,14 @@
         <div class="competance comp9"   role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 53"><span id="count9" class="counts"></span></div>
         <div class="competance comp10"   role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value:72"><span id="count10" class="counts"></span></div>
     </div>
+    <img src="IMG/cvgrand.webp" class="rounded mx-auto d-block img-fluid cvGrand" alt="CV Alexandre Gaglianone DÉVELOPPEUR WEB à Toulouse"></img>
     
-    
+  </div>
+  <div class="expandComp">
+    <a href="#competances"><input class="toggle-box" id="identifier-1" type="checkbox">
+              <label onClick="displayOn()" class="expand" for="identifier-1"></label></a>
+              <div></div>
+            </div>
     <script type="text/javascript">//#region - start of - number counter animation
       const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
        const target = document.querySelector(qSelector);
@@ -65,7 +76,7 @@
        counterAnim("#count10", 0, 72, 730);
       });
       </script>
-      <img src="IMG/cvgrand.webp" class="rounded mx-auto d-block img-fluid cvGrand" alt="CV Alexandre Gaglianone DÉVELOPPEUR WEB à Toulouse"></img>
+     
 
   </main>
 
