@@ -173,6 +173,7 @@ textarea{
     
     position: fixed;
     right: 12.9%;
+    top: 3%;
     margin-top: -9px;
 
 }
@@ -275,6 +276,456 @@ h1{
     font-size: 1rem;
     font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
 }
+#articles{
+    
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    font-weight: initial;
+    width: 98%;
+    margin: auto;
+    margin-top: 20px;
+}
+.pointer{
+    cursor: pointer !important;
+}
+/* */
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+    --percentage: var(--value);
+    --primary: #578aaf;
+    --secondary: #e6bd98;
+    --size: 300px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  
+  [role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+  }
+  
+  /* demo */
+  .counts{
+      margin-top: 37px;
+      font-weight: bolder;
+  }
+  .competance{
+      margin: 10px;
+      width: 5%;      
+      background-size: 54% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  .comp1{
+    background:url(../IMG/html-5.png);
+  }
+  .comp2{
+    background:url(../IMG/css.png);
+  }
+  .comp3{
+    background:url(../IMG/javascript.png);
+  }
+  .comp4{
+    background:url(../IMG/sass.png);
+  }
+  .comp5{
+    background:url(../IMG/vue.png);
+  }
+  .comp6{
+    background:url(../IMG/bootstrap.png);
+  }
+  .comp7{
+    background:url(../IMG/mysql.png);
+  }
+  .comp8{
+    background:url(../IMG/mongodb.png);
+  }
+  .comp9{
+    background:url(../IMG/nodejs.png);
+  }
+  .comp10{
+    background:url(../IMG/git.png);
+  }
+  #competances {
+    margin: 0;
+    display:flex;
+    place-items: center; 
+    justify-content: space-evenly;
+  }
+  
+  
+  /***/
+  
+  #youtube {
+    z-index: 2;
+    display: block;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    border-radius: 50% / 11%;
+    transition: transform 0.5s;
+  }
+  
+  #youtube:hover,
+  #youtube:focus {
+    transform: scale(1.1);
+  }
+  
+  #youtube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: -6%;
+    width: 112%;
+    height: 85%;
+    background: red;
+    border-radius: 9% / 50%;
+  }
+  
+  #youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 45px;
+    height: 30px;
+    border: 15px solid transparent;
+    box-sizing: border-box;
+    border-left: 30px solid white;
+  }
+  
+  #youtube span {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+/* */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+/* This pen */
+
+ .dark {
+	 background: #110f16;
+}
+ .light {
+	 background: #f3f5f7;
+}
+ a, a:hover {
+	 text-decoration: none;
+	 transition: color 0.3s ease-in-out;
+}
+ #pageHeaderTitle {
+	 margin: 2rem 0;
+	 text-transform: uppercase;
+	 text-align: center;
+	 font-size: 2.5rem;
+}
+/* Cards */
+ .postcard {
+	 flex-wrap: wrap;
+	 display: flex;
+	 box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+	 border-radius: 10px;
+	 margin: 0 0 2rem 0;
+	 overflow: hidden;
+	 position: relative;
+	 color: #fff;
+}
+ .postcard.dark {
+	 background-color: #18151f;
+}
+ .postcard.light {
+	 background-color: #e1e5ea;
+}
+ .postcard .t-dark {
+	 color: #18151f;
+}
+ .postcard a {
+	 color: inherit;
+}
+ .postcard h2, .postcard .h1 {
+	 margin-bottom: 0.5rem;
+	 font-weight: 500;
+	 line-height: 1.2;
+}
+ .postcard .small {
+	 font-size: 80%;
+}
+ .postcard .postcard__title {
+    font-size: 1.2rem;
+    margin-bottom: 13px;	 
+}
+ .postcard .postcard__img {
+	 max-height: 180px;
+	 width: 100%;
+	 object-fit: cover;
+	 position: relative;
+}
+ .postcard .postcard__img_link {
+	 display: contents;
+}
+ .postcard .postcard__bar {
+	 width: 50px;
+	 height: 10px;
+	 margin: 10px 0;
+	 border-radius: 5px;
+	 background-color: #424242;
+	 transition: width 0.2s ease;
+}
+ .postcard .postcard__text {
+	 padding: 1.5rem;
+	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+}
+ .postcard .postcard__preview-txt {
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 text-align: justify;
+	 height: 100%;
+}
+ .postcard .postcard__tagbox {
+	 display: flex;
+	 flex-flow: row wrap;
+	 font-size: 14px;
+	 margin: 20px 0 0 0;
+	 padding: 0;
+	 justify-content: center;
+}
+ .postcard .postcard__tagbox .tag__item {
+	 display: inline-block;
+	 background: rgba(83, 83, 83, 0.4);
+	 border-radius: 3px;
+	 padding: 2.5px 10px;
+	 margin: 0 5px 5px 0;
+	 cursor: default;
+	 user-select: none;
+	 transition: background-color 0.3s;
+}
+ .postcard .postcard__tagbox .tag__item:hover {
+	 background: rgba(83, 83, 83, 0.8);
+}
+ .postcard:before {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 background-image: linear-gradient(-70deg, #424242, transparent 50%);
+	 opacity: 1;
+	 border-radius: 10px;
+}
+ .postcard:hover .postcard__bar {
+	 width: 100px;
+}
+ @media screen and (min-width: 769px) {
+	 .postcard {
+		 flex-wrap: inherit;
+	}
+	 
+	 .postcard .postcard__tagbox {
+		 justify-content: start;
+	}
+	 .postcard .postcard__img {
+		 max-width: 300px;
+		 max-height: 100%;
+		 transition: transform 0.3s ease;
+	}
+	 .postcard .postcard__text {
+		 padding: 3rem;
+		 width: 100%;
+	}
+	 .postcard .media.postcard__text:before {
+		 content: "";
+		 position: absolute;
+		 display: block;
+		 background: #18151f;
+		 top: -20%;
+		 height: 130%;
+		 width: 55px;
+	}
+	 .postcard:hover .postcard__img {
+		 transform: scale(1.1);
+	}
+	 .postcard:nth-child(2n+1) {
+		 flex-direction: row;
+	}
+	 .postcard:nth-child(2n+0) {
+		 flex-direction: row-reverse;
+	}
+	 .postcard:nth-child(2n+1) .postcard__text::before {
+		 left: -12px !important;
+		 transform: rotate(4deg);
+	}
+	 .postcard:nth-child(2n+0) .postcard__text::before {
+		 right: -12px !important;
+		 transform: rotate(-4deg);
+	}
+}
+@media screen and (max-width: 1026px) { 
+    #competances{
+        flex-direction: column;
+    }
+    .competance{
+        width: 30%;
+    }
+    .exit{
+        right: 6.9%;
+        top: 16%;
+    }
+}
+ @media screen and (min-width: 1024px) {
+	 .postcard__text {
+		 padding: 2rem 3.5rem;
+	}
+	 .postcard__text:before {
+		 content: "";
+		 position: absolute;
+		 display: block;
+		 top: -20%;
+		 height: 130%;
+		 width: 55px;
+	}
+	 .postcard.dark .postcard__text:before {
+		 background: #18151f;
+	}
+	 .postcard.light .postcard__text:before {
+		 background: #e1e5ea;
+	}
+}
+/* COLORS */
+ .postcard .postcard__tagbox .green.play:hover {
+	 background: #79dd09;
+	 color: black;
+}
+ .green .postcard__title:hover {
+	 color: #79dd09;
+}
+ .green .postcard__bar {
+	 background-color: #79dd09;
+}
+ .green::before {
+	 background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+}
+ .green:nth-child(2n)::before {
+	 background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+}
+ .postcard .postcard__tagbox .blue.play:hover {
+	 background: #0076bd;
+}
+ .blue .postcard__title:hover {
+	 color: #0076bd;
+}
+ .blue .postcard__bar {
+	 background-color: #0076bd;
+}
+ .blue::before {
+	 background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+}
+ .blue:nth-child(2n)::before {
+	 background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+}
+ .postcard .postcard__tagbox .red.play:hover {
+	 background: #bd150b;
+}
+ .red .postcard__title:hover {
+	 color: #bd150b;
+}
+ .red .postcard__bar {
+	 background-color: #bd150b;
+}
+ .red::before {
+	 background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+}
+ .red:nth-child(2n)::before {
+	 background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+}
+ .postcard .postcard__tagbox .yellow.play:hover {
+	 background: #bdbb49;
+	 color: black;
+}
+ .yellow .postcard__title:hover {
+	 color: #bdbb49;
+}
+ .yellow .postcard__bar {
+	 background-color: #bdbb49;
+}
+ .yellow::before {
+	 background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+}
+ .yellow:nth-child(2n)::before {
+	 background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+}
+ @media screen and (min-width: 769px) {
+	 .green::before {
+		 background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	}
+	 .green:nth-child(2n)::before {
+		 background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	}
+	 .blue::before {
+		 background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	}
+	 .blue:nth-child(2n)::before {
+		 background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	}
+	 .red::before {
+		 background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	}
+	 .red:nth-child(2n)::before {
+		 background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	}
+	 .yellow::before {
+		 background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	}
+	 .yellow:nth-child(2n)::before {
+		 background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	}
+}
+ 
 @keyframes color{
     100%{
         color:#d56255;
