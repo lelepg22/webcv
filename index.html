@@ -29,6 +29,8 @@
                 emailjs.sendForm('service_x75m3dw', 'template_nisg74j', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        alert('Message envoyé :)')
+window.location.reload()
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
@@ -168,12 +170,9 @@ Déterminé, organisé et sérieux, je cherche une opportunité, tant pour trava
   <h2 class="projetCreations">Contactez-moi</h2>
 <form id="contact-form">
   <input type="hidden" name="contact_number">
-  <label class="formLabel">Nom, Prénom</label>
-  <input class="inputForm" type="text" name="user_name"><br>
-  <label class="formLabel">Email</label>
-  <input class="inputForm" type="email" name="user_email"><br>
+ 
   <label class="formLabel">Message</label>
-  <textarea name="message"></textarea>
+  <textarea name="message" style="text-align:center; font-size:1.2rem" placeholder='"Laissez votre Email et votre Nom, si vous souhaitez que je vous recontacte"'></textarea>
   <input class="button-73" type="submit" value="Envoyer"><br>
 </form>
 </div>
