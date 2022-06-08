@@ -289,8 +289,9 @@ h1{
     text-align: center;
     display: block;
     position: relative;
-    top: 5px;
+    top: 9px;
     padding: 7px 30px;
+    padding-top: 14px;
     line-height: 35px;
     font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
     min-width: fit-content;
