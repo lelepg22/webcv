@@ -794,6 +794,9 @@ h1{
     }
 }
 @media screen and (max-width: 768px){ 
+  .contact{
+    display: none;
+  }
     .competance{
         width: 23%;
     }
