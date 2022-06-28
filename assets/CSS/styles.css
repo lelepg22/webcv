@@ -786,6 +786,20 @@ h1{
         transform: rotate(360deg) scale(1.2);
     }
 }
+@media screen and (max-width: 1085px){ 
+  #car{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1367px){ 
+  .colorResponsive{
+    background-color: black;
+  }
+
+}
+
 
 @media screen and (max-width: 856px){    
 
