@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Courgette&family=Goudy+Bookletter+1911&family=Rammetto+One&family=Russo+One&family=Seaweed+Script&display=swap');
 #first{
     display: flex;
     flex-direction: row-reverse;
@@ -17,7 +18,7 @@
     border-radius: 4px;  
 }
 #me{
-   
+    width: 60%;
     margin-left: 15px;
     margin-top: 8px
 }
@@ -37,12 +38,12 @@
     align-items: center;
     border: solid 2px #cd5d577a;
     border-radius: 10px;
-    width: 50%;
+    width: 64%;
     margin: auto;
     margin-top: 40px;
     padding-top: 15px;
-    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .expandComp{
     display: none;
@@ -105,13 +106,14 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
     color: #524d4d;  
     font-weight: bold;
     font-size: 0.8rem;
-    width: 100%;
+    width: 70%;
     
   } 
 textarea{
-    width: 56%;
-    height: 6vw;
+    width: 80%;
+    height: 9vw;
     margin-bottom: 23px;
+    padding-top: 18px;
    
 }
 .inputForm{
@@ -120,7 +122,58 @@ textarea{
 
 
 /* CSS */
+.btn1 {
+  width: 130px;
+  height: 40px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
+  font-family:'Russo One' ;
+  text-transform: uppercase;
+ }
+ 
+ .btn1:hover {
+  color:rgba(255, 255, 255, 0.616) !important;
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #f85959,
+   0 15px 0 -4px #39a2db,
+   0 16px 10px -3px #39a2db;
+ }
+ 
+ .btn1:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #f85959,
+   0 8px 0 -4px #39a2db,
+   0 12px 10px -3px #39a2db;
+ }
 
+.button1 {
+  
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ .button1:hover {
+  border: 1px solid white;
+ }
+ 
+ .button1:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+              -4px -4px 12px #ffffff;
+ }
 .button-73 {
   appearance: none;
   background-color: #FFFFFF;
@@ -165,8 +218,11 @@ textarea{
   }
 }
 .formLabel{
+    font-family: 'Courgette', sans-serif;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    font-size: 1.9rem;
 }
 .buttonUnset{
     background-color: unset !important;
@@ -232,6 +288,8 @@ textarea{
     margin-top: 20px;
 }
 .projetCreations{
+
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
     line-height: 40px;
     font-family: system-ui, 'Courier New', Courier, monospace;
     border-bottom: solid 3px #cd5d57;
@@ -240,7 +298,7 @@ textarea{
     margin-top: 12px;
     padding: 8px 33px;
     border-radius: 7px;
-    color:#313c55;
+    color:white;
     margin-bottom: 21px;
 }
 .cvGrand{
@@ -295,6 +353,7 @@ h1{
     line-height: 35px;
     font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
     min-width: fit-content;
+    text-shadow: 0 0 10px #FFFFFF;
 }
 #titlepost{
     font-size: 1rem;
@@ -790,6 +849,9 @@ h1{
   #car{
     display: none;
   }
+  #me{
+    width: unset;
+  }
 
 }
 
@@ -824,14 +886,14 @@ h1{
 
 @media screen and (max-width: 750px){ 
     .formLabel{
-        font-size: 0.9rem;
+        font-size: 1.7rem;
     }
     .button-73{
         font-size: 1rem;
     }
     textarea{
         width: 80%;
-        height: 13vw;
+        height: 28vw;
         
     }
     .inputForm{
@@ -848,7 +910,7 @@ h1{
     }
     h1{
         font-size: 5vw;
-        padding: 5px 20px;        
+        padding: 5px 20px;           
       
     }
     #titlepost{
@@ -860,5 +922,5 @@ h1{
     left: unset;
     display: block;
     }
-
+   
 }

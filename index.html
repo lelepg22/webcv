@@ -22,6 +22,9 @@
     <script type="text/javascript">
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
+                if(this[1].value.length <= 0){
+                  return alert("Votre message est vide")
+                }
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
@@ -175,8 +178,8 @@ Déterminé, organisé et sérieux, je cherche une opportunité, tant pour trava
   <address class="contact">
     <a href="mailto:alex.gaglianone@gmail.com"><i class="fa-solid fa-envelope"></i>  alex.gaglianone@gmail.com</a><br>
     <a href="tel:+33768364537"><i class="fa-solid fa-phone"></i> +33768364537 </a>
-  </address>
-  <input class="button-73" type="submit" value="Envoyer"><br>
+  </address>  
+  <input class="btn1" type="submit" value="Envoyer"><br>
 </form>
 </div>
 <div id="actualites">
