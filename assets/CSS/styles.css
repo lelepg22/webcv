@@ -13,9 +13,18 @@
     display: block;
     margin-top: 8px;
 }
+.indent{
+  vertical-align: text-bottom;
+  font-weight: bold;
+}
 .carousel-item { 
     border: solid 3px gray;
     border-radius: 4px;  
+}
+.footIcon{
+  
+  font-size: 2vh;
+  
 }
 #me{
     width: 60%;
@@ -332,6 +341,7 @@ address{
     flex-direction: row;
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 address > a {
