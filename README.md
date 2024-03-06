@@ -1,9 +1,13 @@
 # webcv
 🌐 https://lelepg22.github.io/webcv/
 
+- [🇫🇷 Cliquez ici pour la version française](#bienvenue-sur-mon-cv-en-ligne)
+- [🇬🇧 Click here for the English version](#english-version)  
+- [🇧🇷 Clique aqui para a versão em português](#versão-em-português)
+ 
 ## Bienvenue sur mon CV en ligne
 
-[Cliquez ici pour la version anglaise](#english-version) | [Cliquez ici pour la version portugaise](#versão-em-português)
+
 
 Je suis un développeur basé à Toulouse, en France, passionné par la création de solutions numériques qui améliorent la vie quotidienne. Ce site est une vitrine de mon portfolio professionnel et de mon curriculum vitae, conçu pour présenter mes compétences, mes projets et mon parcours professionnel.
 
