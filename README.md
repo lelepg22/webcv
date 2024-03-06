@@ -1,179 +1,42 @@
-# Gestionnaire de Candidatures
+# webcv
+🌐 https://lelepg22.github.io/webcv/
 
-- [🇫🇷 Version Française 🧀 🥖 🥐](#version-française)
+## Bienvenue sur mon CV en ligne
 
-- [🇬🇧 English Version 💂 🫖 👑](#english-version)
+[Cliquez ici pour la version anglaise](#english-version) | [Cliquez ici pour la version portugaise](#versão-em-português)
 
-- [🇧🇷-PT Versão Portuguesa ⚽ ☀️ 🥸](#versão-portuguesa)
+Je suis un développeur basé à Toulouse, en France, passionné par la création de solutions numériques qui améliorent la vie quotidienne. Ce site est une vitrine de mon portfolio professionnel et de mon curriculum vitae, conçu pour présenter mes compétences, mes projets et mon parcours professionnel.
 
+À travers ce site, vous découvrirez une gamme de projets sur lesquels j'ai travaillé, allant du développement web à la conception d'applications mobiles, en passant par la programmation de systèmes complexes. Chaque projet est accompagné d'une brève description, des technologies utilisées et, le cas échéant, de liens vers des démos ou des codes sources.
 
-## Version Française
+Mon objectif est de créer des expériences utilisateur fluides et engageantes, en utilisant les dernières technologies et en suivant les meilleures pratiques de l'industrie. Avec une solide formation en informatique et une passion pour l'apprentissage continu, je suis toujours à la recherche de nouveaux défis et opportunités de collaboration.
 
-### Titre: Gestionnaire de Candidatures
+Pour en savoir plus sur mon parcours et mes compétences, n'hésitez pas à parcourir mon site. Si mon profil vous intéresse et que vous souhaitez discuter d'opportunités potentielles, vous trouverez mes coordonnées dans la section contact. Merci de votre visite !
 
-### Description:
-Cette application a pour objectif d'enregistrer vos candidatures à des offres d'emploi, d'enregistrer les informations de l'entreprise à laquelle vous avez postulé, qui a été contacté dans l'entreprise, etc.
-
-
-## Aspects Techniques
-
-### Exigences Système
-
-- Angular CLI : 13.3.9
-- Node : 16.18.0
-- Gestionnaire de paquets : npm 8.19.2
-- .NET SDK : Version : 6.0.401.
-- netcoreapp3.1
-- SQL Server 2019
-
-### Dépendances
-
-Exécutez `Get-Package` dans votre console pour lister les paquets installés :
-
-- Microsoft.EntityFrameworkCore.SqlServer {3.1.25}
-- Swashbuckle.AspNetCore {6.4.0}
-- Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore {3.1.25}
-- Microsoft.AspNetCore.Identity.EntityFrameworkCore {3.1.25}
-- Microsoft.EntityFrameworkCore.Relational {3.1.25}
-- Microsoft.AspNetCore.SpaServices.Extensions {3.1.25}
-- Microsoft.EntityFrameworkCore.Tools {3.1.25}
-- Microsoft.VisualStudio.Web.CodeGeneration.Design {3.1.5}
-- Microsoft.AspNetCore.Identity.UI {3.1.25}
-- Microsoft.AspNetCore.ApiAuthorization.IdentityServer {3.1.25}
-
-### Exécution du Projet Localement
-
-- Créez la base de données basée sur les fichiers de migration existants dans le projet.
--- Exécutez les commandes suivantes dans cmd/powershell :
---- dotnet tool restore
---- dotnet build
---- dotnet ef database update
-
-- Une base de données nommée "alexandredb" devrait avoir été créée dans votre SQL Server.
-
-- Dans le dossier \therealred\ProjetRedLineAG\ProjetRedLineAG\ClientApp\ exécutez les commandes :
--- npm install
--- npm start
-
-- Exécutez IIS Express dans Visual Studio
-
-- PS :🚨 Une erreur de proxy 4200 se produira si IIS est exécuté avant Angular.
-<br>
-<br>
-<br>
-
+---
 
 ## English Version
 
-### Title: Application Management Tool/System
+[Click here for the French version](#bienvenue-sur-mon-cv-en-ligne) | [Click here for the Portuguese version](#versão-em-português)
 
-### Description:
-This application aims to record your applications to job offers, register information about the company you applied to, who was contacted at the company, and so on.
+I am a developer based in Toulouse, France, passionate about creating digital solutions that enhance everyday life. This site serves as a showcase of my professional portfolio and resume, designed to display my skills, projects, and career journey.
 
-## Technical Aspects
+Through this site, you will find a variety of projects I have worked on, ranging from web development to mobile app design, to programming complex systems. Each project comes with a brief description, the technologies used, and where applicable, links to demos or source codes.
 
-### System Requirements
+My goal is to create smooth and engaging user experiences, leveraging the latest technologies and adhering to industry best practices. With a strong background in computer science and a zeal for continuous learning, I am always on the lookout for new challenges and collaborative opportunities.
 
-- Angular CLI: 13.3.9
-- Node: 16.18.0
-- Package Manager: npm 8.19.2
-- .NET SDK: Version: 6.0.401.
-- netcoreapp3.1
-- SQL Server 2019
+To learn more about my background and skills, feel free to explore my site. If you find my profile intriguing and wish to discuss potential opportunities, my contact details can be found in the contact section. Thank you for visiting!
 
-### Dependencies
+---
 
-Run `Get-Package` in your console to list installed packages:
+## Versão em Português
 
-- Microsoft.EntityFrameworkCore.SqlServer {3.1.25}
-- Swashbuckle.AspNetCore {6.4.0}
-- Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore {3.1.25}
-- Microsoft.AspNetCore.Identity.EntityFrameworkCore {3.1.25}
-- Microsoft.EntityFrameworkCore.Relational {3.1.25}
-- Microsoft.AspNetCore.SpaServices.Extensions {3.1.25}
-- Microsoft.EntityFrameworkCore.Tools {3.1.25}
-- Microsoft.VisualStudio.Web.CodeGeneration.Design {3.1.5}
-- Microsoft.AspNetCore.Identity.UI {3.1.25}
-- Microsoft.AspNetCore.ApiAuthorization.IdentityServer {3.1.25}
+[Clique aqui para a versão em francês](#bienvenue-sur-mon-cv-en-ligne) | [Clique aqui para a versão em inglês](#english-version)
 
-### Running the Project Locally
+Sou um desenvolvedor sediado em Toulouse, França, apaixonado por criar soluções digitais que melhoram o cotidiano. Este site é uma vitrine do meu portfólio profissional e currículo, projetado para apresentar minhas habilidades, projetos e trajetória profissional.
 
-- Create the database based on the existing migration files in the project.
--- Execute the following commands in cmd/powershell:
---- dotnet tool restore
---- dotnet build
---- dotnet ef database update
+Neste site, você encontrará uma variedade de projetos nos quais trabalhei, desde o desenvolvimento web até o design de aplicativos móveis, passando pela programação de sistemas complexos. Cada projeto vem acompanhado de uma breve descrição, das tecnologias utilizadas e, quando aplicável, links para demonstrações ou códigos-fonte.
 
-- A database named "alexandredb" should have been created in your SQL Server.
+Meu objetivo é criar experiências de usuário suaves e envolventes, utilizando as últimas tecnologias e seguindo as melhores práticas da indústria. Com uma sólida formação em ciência da computação e um zelo pelo aprendizado contínuo, estou sempre em busca de novos desafios e oportunidades de colaboração.
 
-- In the folder \therealred\ProjetRedLineAG\ProjetRedLineAG\ClientApp\ run the commands:
--- npm install
--- npm start
-
-- Run IIS Express in Visual Studio
-
-- PS:🚨 A proxy error 4200 will occur if IIS is run before Angular.
-<br>
-<br>
-<br>
-
-
-## Versão Portuguesa
-
-### Título: Gestionário de Candidaturas
-
-### Descrição:
-Esta aplicação tem como objetivo registrar suas candidaturas a ofertas de emprego, registrar informações da empresa à qual candidatou-se, quem foi contactado na empresa, e etc.
-
-## Aspectos Técnicos
-
-### Requisitos do Sistema
-
-- Angular CLI: 13.3.9
-- Node: 16.18.0
-- Package Manager: npm 8.19.2
-- .NET SDK: Version:   6.0.401.
-- netcoreapp3.1
-- SQL Server 2019
-
-### Dependências
-
-Get-Package
-
-Id                                  Versions                                                                   
---                                  --------                                                                  
-- Microsoft.EntityFrameworkCore.Sq... {3.1.25}                                                               
-- Swashbuckle.AspNetCore              {6.4.0}                                                                
-- Microsoft.AspNetCore.Diagnostics... {3.1.25}                                                               
-- Microsoft.AspNetCore.Identity.En... {3.1.25}                                                               
-- Microsoft.EntityFrameworkCore.Re... {3.1.25}                                                              
-- Microsoft.AspNetCore.SpaServices... {3.1.25}                                                              
-- Microsoft.EntityFrameworkCore.Tools {3.1.25}                                                              
-- Microsoft.VisualStudio.Web.CodeG... {3.1.5}                                                                
-- Microsoft.AspNetCore.Identity.UI    {3.1.25}                                                               
-- Microsoft.AspNetCore.ApiAuthoriz... {3.1.25}                               
-
-
-
-### Executando o Projeto Localmente
-
-- Crie a base de dados baseado nos arquivos de migration que existem ja no projeto.
--- Execute os comandos no cmd / powershell 
---- dotnet tool resto
---- dotnet build
---- dotnet ef database update
-
-- Uma base de dados com nome "alexandredb" deve ter sido criada no seu sql server
-
-- Na pasta \therealred\ProjetRedLineAG\ProjetRedLineAG\ClientApp\ execute os commandos: 
--- npm install
--- npm start
-
-- No Visual Studio execute o IIS Express
-
-- PS: 🚨 Erro de proxy 4200 acontencera se executar o IIS antes do Angular. 
-
-
-
-
-
+Para saber mais sobre minha formação e habilidades, sinta-se à vontade para explorar meu site. Se você achar meu perfil interessante e desejar discutir oportunidades potenciais, meus detalhes de contato podem ser encontrados na seção de contato. Obrigado pela visita!
